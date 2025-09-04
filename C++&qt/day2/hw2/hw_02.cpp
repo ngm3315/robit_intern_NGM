@@ -70,12 +70,18 @@ void PointCalc::Pointsdistance_max() {
 int main() {
     srand(static_cast<unsigned int>(time(NULL))); 
     int n, min, max;
-    cout << "점 개수 ,최소값, 최대값 입력: ";
-    cin >> n >> min >> max;
+    while(1){
+        std::cout << "점 개수 ,최소값, 최대값 입력(소수를 입력해도 정수부분만 인식합니다.): ";
+        std::cin >> n >> min >> max;
 
-    if (n < 1) {
-        cout << "N은 1 이상이어야 함\n";
-        return 0;
+        if (n < 1) {
+            std::cout << "N은 1 이상이어야 함\n";
+            continue;
+        }
+        
+        else if (min >max){
+            std::cout<<"최소값이 최대값의 값보다 클수 없습니다\n";
+        }else break;
     }
 
     PointCalc pc(n, min, max);
