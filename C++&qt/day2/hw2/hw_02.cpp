@@ -1,69 +1,87 @@
+#include "cpp_test1/hw_02.hpp"
 #include <iostream>
-#include <cpp_test1/hw_02.hpp>
-
-
 #include <cmath>
-#include <cstdlib>
-#include <ctime>
 using namespace std;
 
-PointSet::PointSet(int n, int rangeX, int rangeY) {
-    srand((unsigned)time(NULL));
-    for (int i = 0; i < n; i++) {
-        Point p;
-        p.x = rand() % (rangeX + 1);
-        p.y = rand() % (rangeY + 1);
-        points.push_back(p);
+PointCalc::PointCalc(int n, int min, int max) {
+    size = n;
+    points = new Point[size];
+      // 한 번만 호출하면 됨
+    for (int i = 0; i < size; i++) {
+        
+        points[i].x = min + rand() % (max - min + 1);
+        points[i].y = min + rand() % (max - min + 1);
     }
-    minDist = 1e9;
-    maxDist = -1.0;
+}
+PointCalc::~PointCalc() {
+    delete[] points;
+}
+void PointCalc::printPoints() {
+    for (int i = 0; i < size; i++) {
+        cout << "점" << i+1 << " = (" << points[i].x << "," << points[i].y << ")\n";
+    }
 }
 
-double PointSet::distance(const Point& a, const Point& b) {
-    return sqrt(pow(a.x - b.x, 2) + pow(a.y - b.y, 2));
-}
 
-void PointSet::computeDistances() {
-    for (size_t i = 0; i < points.size(); i++) {
-        for (size_t j = i + 1; j < points.size(); j++) {
-            double d = distance(points[i], points[j]);
-            if (d < minDist) {
-                minDist = d;
-                minPair = {points[i], points[j]};
-            }
-            if (d > maxDist) {
-                maxDist = d;
-                maxPair = {points[i], points[j]};
+void PointCalc::Pointsdistance_min() {
+    if (size < 2) return;
+    int dx1 = points[0].x - points[1].x;
+    int dy1 = points[0].y - points[1].y;
+    int d_origin = dx1 * dx1 + dy1 * dy1;
+    int min_d2 = d_origin;
+    Point A{}, B{};
+    for (int i = 0; i < size; i++) {
+        for (int j = i + 1; j < size; j++) {
+            int dx = points[i].x - points[j].x;
+            int dy = points[i].y - points[j].y;
+            int d2 = dx * dx + dy * dy;
+            if (d2 < min_d2) {
+                min_d2 = d2;
+                A = points[i];
+                B = points[j];
             }
         }
     }
+    cout << "최소 거리 = " << sqrt((double)min_d2)
+         << " ((" << A.x << "," << A.y << ") - ("
+         << B.x << "," << B.y << "))\n";
 }
 
-void PointSet::printResults() {
-    cout << "최소 거리 = " << minDist << " ("
-         << "(" << minPair.first.x << "," << minPair.first.y << ")"
-         << " - "
-         << "(" << minPair.second.x << "," << minPair.second.y << ")"
-         << ")" << endl;
-
-    cout << "최대 거리 = " << maxDist << " ("
-         << "(" << maxPair.first.x << "," << maxPair.first.y << ")"
-         << " - "
-         << "(" << maxPair.second.x << "," << maxPair.second.y << ")"
-         << ")" << endl;
+void PointCalc::Pointsdistance_max() {
+    if (size < 2) return;
+    int max_d2 = -1;
+    Point A{}, B{};
+    for (int i = 0; i < size; i++) {
+        for (int j = i + 1; j < size; j++) {
+            int dx = points[i].x - points[j].x;
+            int dy = points[i].y - points[j].y;
+            int d2 = dx * dx + dy * dy;
+            if (d2 > max_d2) {
+                max_d2 = d2;
+                A = points[i];
+                B = points[j];
+            }
+        }
+    }
+    cout << "최대 거리 = " << sqrt((double)max_d2)
+         << " ((" << A.x << "," << A.y << ") - ("
+         << B.x << "," << B.y << "))\n";
 }
 int main() {
-    int n, rangeX, rangeY;
-    cout << "점 개수 입력: ";
-    cin >> n;
-    cout << "X 좌표 범위 입력: ";
-    cin >> rangeX;
-    cout << "Y 좌표 범위 입력: ";
-    cin >> rangeY;
+    srand(static_cast<unsigned int>(time(NULL))); 
+    int n, min, max;
+    cout << "점 개수 ,최소값, 최대값 입력: ";
+    cin >> n >> min >> max;
 
-    PointSet ps(n, rangeX, rangeY);
-    ps.computeDistances();
-    ps.printResults();
+    if (n < 1) {
+        cout << "N은 1 이상이어야 함\n";
+        return 0;
+    }
+
+    PointCalc pc(n, min, max);
+    pc.printPoints();
+    pc.Pointsdistance_min();
+    pc.Pointsdistance_max();
 
     return 0;
 }
