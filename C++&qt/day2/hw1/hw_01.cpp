@@ -1,6 +1,6 @@
 #include "cpp_test1/hw_01.hpp"
 #include <iostream>
-using namespace std;
+
 
 ArrayStats::ArrayStats(int n) {
     size = n;
