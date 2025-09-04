@@ -1,24 +1,18 @@
-#include <vector>
-#include <utility>
-using namespace std;
-
 struct Point {
     int x;
     int y;
 };
 
-class PointSet {
+class PointCalc {
 private:
-    vector<Point> points;
-    pair<Point, Point> minPair;
-    pair<Point, Point> maxPair;
-    double minDist;
-    double maxDist;
-
-    double distance(const Point& a, const Point& b);
-
+    Point* points;   // 동적 배열
+    int size;
+    int *distance;
 public:
-    PointSet(int n, int rangeX, int rangeY);
-    void computeDistances();
-    void printResults();
+    PointCalc(int n, int min, int max);
+    ~PointCalc();
+    void printPoints();
+   
+    void Pointsdistance_max();
+    void Pointsdistance_min();
 };
