@@ -1,0 +1,5 @@
+/home/ngm/hw02/build/Desktop-Debug/CMakeFiles/hw02.dir
+/home/ngm/hw02/build/Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/ngm/hw02/build/Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/ngm/hw02/build/Desktop-Debug/CMakeFiles/hw02_autogen_timestamp_deps.dir
+/home/ngm/hw02/build/Desktop-Debug/CMakeFiles/hw02_autogen.dir
