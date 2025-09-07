@@ -1,0 +1,9 @@
+/home/ngm/hw_02/build/Desktop-Debug/CMakeFiles/hw_02.dir
+/home/ngm/hw_02/build/Desktop-Debug/CMakeFiles/edit_cache.dir
+/home/ngm/hw_02/build/Desktop-Debug/CMakeFiles/rebuild_cache.dir
+/home/ngm/hw_02/build/Desktop-Debug/CMakeFiles/list_install_components.dir
+/home/ngm/hw_02/build/Desktop-Debug/CMakeFiles/install.dir
+/home/ngm/hw_02/build/Desktop-Debug/CMakeFiles/install/local.dir
+/home/ngm/hw_02/build/Desktop-Debug/CMakeFiles/install/strip.dir
+/home/ngm/hw_02/build/Desktop-Debug/CMakeFiles/hw_02_autogen_timestamp_deps.dir
+/home/ngm/hw_02/build/Desktop-Debug/CMakeFiles/hw_02_autogen.dir
