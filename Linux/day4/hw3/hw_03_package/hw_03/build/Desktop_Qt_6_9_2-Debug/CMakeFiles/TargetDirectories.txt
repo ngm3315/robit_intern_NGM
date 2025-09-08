@@ -1,0 +1,9 @@
+/home/robit/hw_03/build/Desktop_Qt_6_9_2-Debug/CMakeFiles/hw_03.dir
+/home/robit/hw_03/build/Desktop_Qt_6_9_2-Debug/CMakeFiles/edit_cache.dir
+/home/robit/hw_03/build/Desktop_Qt_6_9_2-Debug/CMakeFiles/rebuild_cache.dir
+/home/robit/hw_03/build/Desktop_Qt_6_9_2-Debug/CMakeFiles/list_install_components.dir
+/home/robit/hw_03/build/Desktop_Qt_6_9_2-Debug/CMakeFiles/install.dir
+/home/robit/hw_03/build/Desktop_Qt_6_9_2-Debug/CMakeFiles/install/local.dir
+/home/robit/hw_03/build/Desktop_Qt_6_9_2-Debug/CMakeFiles/install/strip.dir
+/home/robit/hw_03/build/Desktop_Qt_6_9_2-Debug/CMakeFiles/hw_03_autogen_timestamp_deps.dir
+/home/robit/hw_03/build/Desktop_Qt_6_9_2-Debug/CMakeFiles/hw_03_autogen.dir
