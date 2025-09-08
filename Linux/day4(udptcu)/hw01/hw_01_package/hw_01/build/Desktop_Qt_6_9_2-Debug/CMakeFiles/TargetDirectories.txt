@@ -1,0 +1,5 @@
+/home/robit/hw_01/build/Desktop_Qt_6_9_2-Debug/CMakeFiles/hw_01.dir
+/home/robit/hw_01/build/Desktop_Qt_6_9_2-Debug/CMakeFiles/edit_cache.dir
+/home/robit/hw_01/build/Desktop_Qt_6_9_2-Debug/CMakeFiles/rebuild_cache.dir
+/home/robit/hw_01/build/Desktop_Qt_6_9_2-Debug/CMakeFiles/hw_01_autogen_timestamp_deps.dir
+/home/robit/hw_01/build/Desktop_Qt_6_9_2-Debug/CMakeFiles/hw_01_autogen.dir
