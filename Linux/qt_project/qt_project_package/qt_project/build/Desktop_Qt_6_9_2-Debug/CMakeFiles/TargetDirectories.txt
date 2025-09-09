@@ -1,5 +1,0 @@
-/home/ngm/qt_project/build/Desktop_Qt_6_9_2-Debug/CMakeFiles/qt_project.dir
-/home/ngm/qt_project/build/Desktop_Qt_6_9_2-Debug/CMakeFiles/edit_cache.dir
-/home/ngm/qt_project/build/Desktop_Qt_6_9_2-Debug/CMakeFiles/rebuild_cache.dir
-/home/ngm/qt_project/build/Desktop_Qt_6_9_2-Debug/CMakeFiles/qt_project_autogen_timestamp_deps.dir
-/home/ngm/qt_project/build/Desktop_Qt_6_9_2-Debug/CMakeFiles/qt_project_autogen.dir
