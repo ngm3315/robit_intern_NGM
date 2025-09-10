@@ -1,5 +1,0 @@
-/home/david/intern_ws/qt/qtproject/build/CMakeFiles/qtproject.dir
-/home/david/intern_ws/qt/qtproject/build/CMakeFiles/edit_cache.dir
-/home/david/intern_ws/qt/qtproject/build/CMakeFiles/rebuild_cache.dir
-/home/david/intern_ws/qt/qtproject/build/CMakeFiles/qtproject_autogen_timestamp_deps.dir
-/home/david/intern_ws/qt/qtproject/build/CMakeFiles/qtproject_autogen.dir
