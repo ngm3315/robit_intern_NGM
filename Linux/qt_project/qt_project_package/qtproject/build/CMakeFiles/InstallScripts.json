@@ -1,0 +1,7 @@
+{
+	"InstallScripts" : 
+	[
+		"/home/david/intern_ws/qt/qtproject/build/cmake_install.cmake"
+	],
+	"Parallel" : false
+}
