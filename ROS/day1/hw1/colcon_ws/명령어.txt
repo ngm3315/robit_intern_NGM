@@ -1,0 +1,26 @@
+직진 : 
+ros2 topic pub --once /turtle1/cmd_vel geometry_msgs/msg/Twist \
+"{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}"
+ros2 topic pub --once /turtle1/cmd_vel geometry_msgs/msg/Twist \
+"{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 0.0}}"
+
+
+제자리 90도 회전 : 
+
+
+ros2 topic pub --once /turtle1/cmd_vel geometry_msgs/msg/Twist \
+"{linear: {x: 0.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.57}}"
+
+
+
+ 120도 회전 :
+
+# 120도 회전
+ros2 topic pub --once /turtle1/cmd_vel geometry_msgs/msg/Twist \
+"{linear: {x: 0.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 2.09}}"
+
+원 
+ros2 topic pub -r 30 /turtle1/cmd_vel geometry_msgs/msg/Twist \
+"{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.8}}"
+
+
