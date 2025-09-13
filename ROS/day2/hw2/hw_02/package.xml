@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>hw_02</name>
+  <version>0.1.0</version>
+  <description>Qt GUI with ROS2 turtlesim controller</description>
+
+  <maintainer email="author@mail.com">author</maintainer>
+  <author>author</author>
+  <license>BSD</license>
+
+  <!-- 빌드 툴 -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <!-- 런타임/빌드 의존성 -->
+  <depend>rclcpp</depend>
+  <depend>turtlesim</depend>
+  <depend>geometry_msgs</depend>
+
+  <!-- Qt는 시스템 패키지이므로 여기에는 보통 안 씀. CMake에서 find_package(Qt6 ...) 처리 -->
+
+  <!-- 테스트 -->
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+  
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
+
