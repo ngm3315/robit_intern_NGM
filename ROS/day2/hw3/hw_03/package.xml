@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>hw_03</name>
+  <version>0.0.1</version>
+  <description>Qt GUI talker/listener (std_msgs/String)</description>
+
+  <maintainer email="you@example.com">you</maintainer>
+  <license>MIT</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <depend>rclcpp</depend>
+  <depend>std_msgs</depend>
+
+  <exec_depend>qtbase5-dev</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
