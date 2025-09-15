@@ -1,0 +1,2 @@
+Invoking command in '/home/ngm/colcon_ws/src/hw_01/build/hw_01': /usr/bin/cmake /home/ngm/colcon_ws/src/hw_01 -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/ngm/colcon_ws/src/hw_01/install
+Invoked command in '/home/ngm/colcon_ws/src/hw_01/build/hw_01' returned '1': /usr/bin/cmake /home/ngm/colcon_ws/src/hw_01 -DCATKIN_INSTALL_INTO_PREFIX_ROOT=0 -DCATKIN_SYMLINK_INSTALL=ON -DCMAKE_INSTALL_PREFIX=/home/ngm/colcon_ws/src/hw_01/install

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry"><rect><x>0</x><y>0</y><width>560</width><height>380</height></rect></property>
+  <property name="windowTitle"><string>HW_01 Vector Pub/Sub</string></property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <item>
+     <widget class="QLineEdit" name="editInput">
+      <property name="placeholderText"><string>예: 1 2 3, 4 5</string></property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="hbtn">
+      <item><widget class="QPushButton" name="btnPublish">
+        <property name="text"><string>Publish</string></property>
+      </widget></item>
+      <item><widget class="QPushButton" name="btnClear">
+        <property name="text"><string>Clear</string></property>
+      </widget></item>
+    </layout></item>
+    <item><widget class="QTextEdit" name="textLog"/></item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
