@@ -1,0 +1,10 @@
+<launch>
+  
+  <include file="$(find-pkg-share hw_01)/launch/hw01_turtlesim.launch.py"/>
+
+  
+  <node pkg="hw_04" exec="hw_04_node" name="robot_arm" output="screen">
+    <param from="$(find-pkg-share hw_04)/config/arm_params.yaml"/>
+  </node>
+</launch>
+
