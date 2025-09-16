@@ -4,7 +4,6 @@ from ament_index_python.packages import get_package_share_directory
 import os
 
 def generate_launch_description():
-    # yaml 경로
     config = os.path.join(
         get_package_share_directory('hw_04'),
         'config',
@@ -12,7 +11,6 @@ def generate_launch_description():
     )
 
     return LaunchDescription([
-        # turtlesim 과제 노드
         Node(
             package='turtlesim',
             executable='turtlesim_node',
@@ -24,8 +22,6 @@ def generate_launch_description():
             name='drawer',
             output='screen'
         ),
-
-        # 로봇팔 과제 노드
         Node(
             package='hw_04',
             executable='hw_04_node',
