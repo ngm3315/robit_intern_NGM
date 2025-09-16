@@ -1,5 +1,0 @@
-robot_arm:
-  ros__parameters:
-    link_lengths: [120.0, 100.0, 80.0]
-    init_angles: [0.0, 45.0, -30.0]
-
