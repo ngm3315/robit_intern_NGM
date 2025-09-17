@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>dual4_publisher</name>
+  <version>0.0.1</version>
+  <description>DualShock4 → cmd_vel</description>
+  <maintainer email="you@example.com">you</maintainer>
+  <license>MIT</license>
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <depend>rclcpp</depend>
+  <depend>sensor_msgs</depend>
+  <depend>geometry_msgs</depend>
+  <exec_depend>joy</exec_depend>
+</package>

@@ -1,0 +1,37 @@
+Panels:
+  - Class: rviz/Displays
+    Name: Displays
+  - Class: rviz/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Name: Grid
+      Class: rviz/Grid
+      Enabled: true
+    - Name: TF
+      Class: rviz/TF
+      Enabled: true
+    - Name: RobotModel
+      Class: rviz/RobotModel
+      Enabled: false
+    - Name: Odometry
+      Class: rviz/Odometry
+      Enabled: true
+      Topic: /odom
+      Color: 255; 25; 0
+      Shape: Arrow
+      Keep: 100
+      Position Tolerance: 0.1
+      Angle Tolerance: 0.1
+  Views:
+    Current:
+      Class: rviz/Orbit
+      Distance: 10
+      Focal Point:
+        X: 0
+        Y: 0
+        Z: 0
+      Pitch: 0.785
+      Yaw: 0.785
+
